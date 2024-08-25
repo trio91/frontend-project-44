@@ -8,5 +8,8 @@
   },
   "author": "Dima",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
 }
