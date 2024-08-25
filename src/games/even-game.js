@@ -1,8 +1,20 @@
  
 import readlineSync from 'readline-sync';
-function game () {   
-    console.log('Answer "yes" if the number is even, otherwise answer "no".');
-    
-
+import { getName, getNumber, start} from '../index.js';
+const number = getNumber();
+const even = (number) => {
+    const result = (number % 2 === 0);
+    return result;
 }
+const resultOfIt = () => {
+    const number = getNumber();
+    const question = `Question: ${number}`;
+    const correct = even(number) ? 'yes' : 'no';
+    return [question, correct];
+}
+const game = () => {
+   const startMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
+   start (startMessage, resultOfIt);
+}
+   
 export default game;
