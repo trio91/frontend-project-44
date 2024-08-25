@@ -15,7 +15,7 @@ function start (startMessage, result) {
     for (let i = 0; i < 3; i ++) {
         const [question, correct] = result();
         console.log(question);
-        const userAnswer = readlineSync.question('Yor answer: ');
+        const userAnswer = readlineSync.question('Your answer: ');
         if (userAnswer != correct) {
             console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correct}'. \nLet's try again, ${name}!)`);
             return;
