@@ -1,6 +1,4 @@
-import readlineSync from 'readline-sync';
-import { getName, getNumber, start} from '../index.js';
-const number = getNumber();
+import {getNumber, start} from '../index.js';
 const even = (number) => {
     const result = (number % 2 === 0);
     return result;
