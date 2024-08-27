@@ -1,4 +1,3 @@
- 
 import readlineSync from 'readline-sync';
 import { getName, getNumber, start} from '../index.js';
 const number = getNumber();
