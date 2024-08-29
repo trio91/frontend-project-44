@@ -4,7 +4,7 @@ function answer(number1, number2) {
   let x = number1;
   let y = number2;
   let gcd = 0;
-  while (x != 0 && y !== 0) {
+  while (x !== 0 && y !== 0) {
     if (x > y) {
       x %= y;
     } else {

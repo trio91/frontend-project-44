@@ -11,6 +11,7 @@ const calculation = (operation, firstNumber, secondNumber) => {
     case '+': return firstNumber + secondNumber;
     case '-': return firstNumber - secondNumber;
     case '*': return firstNumber * secondNumber;
+    default: console.log(`sorry`);
   }
 };
 
