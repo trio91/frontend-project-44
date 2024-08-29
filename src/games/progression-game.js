@@ -9,7 +9,7 @@ import { getNumber, start } from "../index.js";
     const cutIndex = Math.floor(Math.random() * 10);
     const missingIndex  = progression[cutIndex];
     progression[cutIndex] = '..';
-        const question = `Question: ${progression}`;
+        const question = `Question: ${progression.join(' ')}`;
         const correct = missingIndex.toString();
         return [question, correct];
     };
