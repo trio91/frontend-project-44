@@ -1,4 +1,4 @@
-import { getNumber, start } from "../index.js";
+import { getNumber, start } from '../index.js';
 
 const resultOfIt = () => {
   const progression = [];

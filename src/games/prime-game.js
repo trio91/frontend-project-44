@@ -3,11 +3,11 @@ import { start, getNumber } from '../index.js';
 function isPrime(number) {
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
-        return false; 
-    }  
+      return false;
+    }
   }
-return number !== 1;
-};
+  return number !== 1;
+}
 
 const resultOfIt = () => {
   const number = getNumber();

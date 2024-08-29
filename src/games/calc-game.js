@@ -6,12 +6,12 @@ function getExpression() {
   return operation;
 }
 
-const calculation = (operation, firstNumber, secondNumber) => {
+function calculation (operation, firstNumber, secondNumber) {
   switch (operation) {
     case '+': return firstNumber + secondNumber;
     case '-': return firstNumber - secondNumber;
     case '*': return firstNumber * secondNumber;
-    default: console.log(`sorry`);
+    default: console.log('sorry');
   }
 };
 
