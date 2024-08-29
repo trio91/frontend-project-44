@@ -13,3 +13,6 @@
 
 Пример работы игры "Арифметическая прогрессия" :
 <a href="https://asciinema.org/a/bN3K2z7nmJGX1NjpA4ELkbmhh" target="_blank"><img src="https://asciinema.org/a/bN3K2z7nmJGX1NjpA4ELkbmhh.svg" /></a>
+
+Пример работы игры "Простое ли число?" : 
+<a href="https://asciinema.org/a/ArNBzIZGv60zmBGIpLqfKphUP" target="_blank"><img src="https://asciinema.org/a/ArNBzIZGv60zmBGIpLqfKphUP.svg" /></a>
