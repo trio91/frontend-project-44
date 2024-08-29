@@ -5,7 +5,7 @@
 Пример работы игры "Проверка на чётность" :
 <a href="https://asciinema.org/a/qWCexXjG9Ia4OWvwsqWVYBsma" target="_blank"><img src="https://asciinema.org/a/qWCexXjG9Ia4OWvwsqWVYBsma.svg" /></a>
 
-Пример работы игры "Кальклятор" :
+Пример работы игры "Калькулятор" :
 <a href="https://asciinema.org/a/f8AZQ5iVtzugpkpKlh5HJPZwl" target="_blank"><img src="https://asciinema.org/a/f8AZQ5iVtzugpkpKlh5HJPZwl.svg" /></a>
 
 Пример работы игры "НОД" :
