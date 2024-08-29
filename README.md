@@ -10,3 +10,6 @@
 
 Пример работы игры "НОД" :
 <a href="https://asciinema.org/a/ozUJ1x2oW3FLf6ALonPanPm2B" target="_blank"><img src="https://asciinema.org/a/ozUJ1x2oW3FLf6ALonPanPm2B.svg" /></a>
+
+Пример работы игры "Последовательность" :
+<a href="https://asciinema.org/a/bN3K2z7nmJGX1NjpA4ELkbmhh" target="_blank"><img src="https://asciinema.org/a/bN3K2z7nmJGX1NjpA4ELkbmhh.svg" /></a>
