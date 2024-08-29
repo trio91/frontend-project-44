@@ -6,14 +6,15 @@ function getExpression() {
   return operation;
 }
 
-function calculation (operation, firstNumber, secondNumber) {
+function calculation(operation, firstNumber, secondNumber) {
   switch (operation) {
     case '+': return firstNumber + secondNumber;
     case '-': return firstNumber - secondNumber;
     case '*': return firstNumber * secondNumber;
     default: console.log('sorry');
   }
-};
+  return null;
+}
 
 const resultOfIt = () => {
   const number1 = getNumber();
