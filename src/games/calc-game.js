@@ -28,6 +28,6 @@ const resultOfIt = () => {
 const startCalc = () => {
   const startMessage = 'What is the result of the expression?';
   start(startMessage, resultOfIt);
-}
+};
 
 export default startCalc;
