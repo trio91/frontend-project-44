@@ -6,14 +6,15 @@ const even = (number) => {
   return result;
 };
 const resultOfIt = () => {
-  const number = getNumber();
+  const max = 100;
+  const number = getNumber(max);
   const question = `Question: ${number}`;
-  const correct = even(number) ? 'yes' : 'no';
-  return [question, correct];
+  const correctAnswer = even(number) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 const startEven = () => {
-  const startMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
-  start(startMessage, resultOfIt);
+  const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+  start(description, resultOfIt);
 };
 
 export default startEven;

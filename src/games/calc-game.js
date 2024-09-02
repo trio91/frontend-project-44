@@ -7,7 +7,7 @@ function getExpression() {
   return operation;
 }
 
-function calculation(operation, firstNumber, secondNumber) {
+const  calculation = (operation, firstNumber, secondNumber) => {
   switch (operation) {
     case '+': return firstNumber + secondNumber;
     case '-': return firstNumber - secondNumber;
@@ -15,20 +15,21 @@ function calculation(operation, firstNumber, secondNumber) {
     default: console.log('sorry');
   }
   return null;
-}
+};
 
 const resultOfIt = () => {
-  const number1 = getNumber();
-  const number2 = getNumber();
+  const max = 100;
+  const number1 = getNumber(max);
+  const number2 = getNumber(max);
   const expression = getExpression();
   const question = `Question: ${number1} ${expression} ${number2}`;
-  const correct = calculation(expression, number1, number2).toString();
-  return [question, correct];
+  const correctAnswer = calculation(expression, number1, number2).toString();
+  return [question, correctAnswer];
 };
 
 const startCalc = () => {
-  const startMessage = 'What is the result of the expression?';
-  start(startMessage, resultOfIt);
+  const description = 'What is the result of the expression?';
+  start(description, resultOfIt);
 };
 
 export default startCalc;

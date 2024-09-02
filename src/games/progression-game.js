@@ -2,8 +2,9 @@ import { start } from '../index.js';
 import { getNumber } from '../utils.js';
 
 const resultOfIt = () => {
+  const max = 100;
   const progression = [];
-  const firstItem = getNumber();
+  const firstItem = getNumber(max);
   for (let i = firstItem; i < firstItem + 10; i += 1) {
     progression.push(i);
   }
@@ -11,11 +12,11 @@ const resultOfIt = () => {
   const missingIndex = progression[cutIndex];
   progression[cutIndex] = '..';
   const question = `Question: ${progression.join(' ')}`;
-  const correct = missingIndex.toString();
-  return [question, correct];
+  const correctAnswer = missingIndex.toString();
+  return [question, correctAnswer];
 };
 const startProgression = () => {
-  const startMessage = 'What number is missing in the progression?';
-  start(startMessage, resultOfIt);
+  const description = 'What number is missing in the progression?';
+  start(description, resultOfIt);
 };
 export default startProgression;

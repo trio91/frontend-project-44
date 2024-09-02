@@ -14,17 +14,18 @@ const answer = (number1, number2) => {
   }
   gcd = x + y;
   return gcd;
-}
+};
 
 const resultOfIt = () => {
-  const number1 = getNumber();
-  const number2 = getNumber();
+  const max = 100;
+  const number1 = getNumber(max);
+  const number2 = getNumber(max);
   const question = `Question: ${number1} ${number2}`;
-  const correct = answer(number1, number2).toString();
-  return [question, correct];
+  const correctAnswer = answer(number1, number2).toString();
+  return [question, correctAnswer];
 };
 const startGcd = () => {
-  const startMessage = 'Find the greatest common divisor of given numbers.';
-  start(startMessage, resultOfIt);
+  const description = 'Find the greatest common divisor of given numbers.';
+  start(description, resultOfIt);
 };
 export default startGcd;
