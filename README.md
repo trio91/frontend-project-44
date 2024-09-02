@@ -13,16 +13,16 @@
 ```
 make install
 ```
-- установить пакет, введя команду "npm link"
+- установить пакет, введя команду
 ```
 npm link
 ```
 - запустить желаемую игру, введя её в терминале
 
-### Список игр 
+# Список игр 
 
 ## Игра 'Проверка на чётность'
-- для запуска используется 
+для запуска используется 
 ```
 brain-even
 ```
@@ -30,7 +30,7 @@ brain-even
 <a href="https://asciinema.org/a/qWCexXjG9Ia4OWvwsqWVYBsma" target="_blank"><img src="https://asciinema.org/a/qWCexXjG9Ia4OWvwsqWVYBsma.svg" /></a>
 
 ## Игра 'Калькулятор'
-- для запуска используется 
+для запуска используется 
 ```
 brain-calc
 ```
@@ -38,7 +38,7 @@ brain-calc
 <a href="https://asciinema.org/a/f8AZQ5iVtzugpkpKlh5HJPZwl" target="_blank"><img src="https://asciinema.org/a/f8AZQ5iVtzugpkpKlh5HJPZwl.svg" /></a>
 
 ## Игра 'Наибольший общий делитель'
-- для запуска используется 
+для запуска используется 
 ```
 brain-gcd
 ```
@@ -46,7 +46,7 @@ brain-gcd
 <a href="https://asciinema.org/a/ozUJ1x2oW3FLf6ALonPanPm2B" target="_blank"><img src="https://asciinema.org/a/ozUJ1x2oW3FLf6ALonPanPm2B.svg" /></a>
 
 ## Игра 'Арифметическая прогрессия'
-- для запуска используется 
+для запуска используется 
 ```
 brain-progression
 ```
@@ -54,7 +54,7 @@ brain-progression
 <a href="https://asciinema.org/a/bN3K2z7nmJGX1NjpA4ELkbmhh" target="_blank"><img src="https://asciinema.org/a/bN3K2z7nmJGX1NjpA4ELkbmhh.svg" /></a>
 
 ## Игра 'Простое ли число?'
-- для запуска используется 
+для запуска используется 
 ```
 brain-prime
 ```
