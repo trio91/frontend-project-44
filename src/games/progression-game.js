@@ -13,8 +13,8 @@ const resultOfIt = () => {
   const correct = missingIndex.toString();
   return [question, correct];
 };
-const game = () => {
+const startProgression = () => {
   const startMessage = 'What number is missing in the progression?';
   start(startMessage, resultOfIt);
 };
-export default game;
+export default startProgression;

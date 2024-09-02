@@ -10,9 +10,9 @@ const resultOfIt = () => {
   const correct = even(number) ? 'yes' : 'no';
   return [question, correct];
 };
-const game = () => {
+const startEven = () => {
   const startMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
   start(startMessage, resultOfIt);
 };
 
-export default game;
+export default startEven;

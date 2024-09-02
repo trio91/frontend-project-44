@@ -19,8 +19,8 @@ const resultOfIt = () => {
   return [question, correct];
 };
 
-const game = () => {
+const startPrime = () => {
   const startMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   start(startMessage, resultOfIt);
 };
-export default game;
+export default startPrime;

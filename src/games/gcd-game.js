@@ -22,8 +22,8 @@ const resultOfIt = () => {
   const correct = answer(number1, number2).toString();
   return [question, correct];
 };
-const game = () => {
+const startGcd = () => {
   const startMessage = 'Find the greatest common divisor of given numbers.';
   start(startMessage, resultOfIt);
 };
-export default game;
+export default startGcd;

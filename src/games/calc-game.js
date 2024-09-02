@@ -25,9 +25,9 @@ const resultOfIt = () => {
   return [question, correct];
 };
 
-function game() {
+const startCalc = () => {
   const startMessage = 'What is the result of the expression?';
   start(startMessage, resultOfIt);
 }
 
-export default game;
+export default startCalc;
