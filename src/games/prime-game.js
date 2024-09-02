@@ -1,6 +1,7 @@
-import { start, getNumber } from '../index.js';
+import { start } from '../index.js';
+import { getNumber } from '../utils.js';
 
-function isPrime(number) {
+const isPrime = (number) => {
   if (number === 0) {
     return false;
   }

@@ -1,6 +1,7 @@
-import { getNumber, start } from '../index.js';
+import { start } from '../index.js';
+import { getNumber } from '../utils.js';
 
-function answer(number1, number2) {
+const answer = (number1, number2) => {
   let x = number1;
   let y = number2;
   let gcd = 0;

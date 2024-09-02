@@ -1,16 +1,12 @@
 import readlineSync from 'readline-sync';
 
-const getNumber = () => {
-  const number = Math.floor(Math.random() * 100);
-  return number;
-};
-function getName() {
+const getName = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   return name;
 }
-function start(startMessage, result) {
+const start = (startMessage, result) => {
   const name = getName();
   console.log(startMessage);
   for (let i = 0; i < 3; i += 1) {
@@ -26,4 +22,4 @@ function start(startMessage, result) {
   console.log(`Congratulations, ${name}!`);
 }
 
-export { getNumber, getName, start };
+export { getName, start };
