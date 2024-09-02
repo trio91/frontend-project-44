@@ -1,5 +1,5 @@
-import { start } from '../index.js';
-import { getNumber } from '../utils.js';
+import start from '../index.js';
+import getNumber from '../utils.js';
 
 const even = (number) => {
   const result = (number % 2 === 0);

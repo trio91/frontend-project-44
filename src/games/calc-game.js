@@ -1,5 +1,5 @@
-import { start } from '../index.js';
-import { getNumber } from '../utils.js';
+import start from '../index.js';
+import getNumber from '../utils.js';
 
 const expressions = ['+', '-', '*'];
 function getExpression() {
@@ -7,7 +7,7 @@ function getExpression() {
   return operation;
 }
 
-const  calculation = (operation, firstNumber, secondNumber) => {
+const calculation = (operation, firstNumber, secondNumber) => {
   switch (operation) {
     case '+': return firstNumber + secondNumber;
     case '-': return firstNumber - secondNumber;

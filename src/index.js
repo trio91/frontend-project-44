@@ -23,4 +23,4 @@ const start = (description, generateRound) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export { start };
+export default start;
