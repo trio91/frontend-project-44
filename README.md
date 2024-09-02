@@ -2,9 +2,12 @@
 [![Actions Status](https://github.com/trio91/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/trio91/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/trio91/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/ae04bb86db682c8e6be4/maintainability" /></a>
 
-## Это учебный проект, в котором выполнены игры на JavaScript
+# Это учебный проект, в котором выполнены игры на JavaScript
 
-# Инструкции по установке и запуску: 
+## Системные требования
+- [Node.js](https://nodejs.org/en/) версии от 13.2.0 
+
+## Инструкции по установке и запуску: 
 - склонировать репозиторий
 - в директории проекта ввести команду "make install"
 - установить пакет, введя команду "npm link"
