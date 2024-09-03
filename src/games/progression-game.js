@@ -1,22 +1,24 @@
 import start from '../index.js';
-import getNumber from '../utils.js';
+import { getRandomNumber, getRandomIndex } from '../utils.js';
 
-const resultOfIt = () => {
-  const max = 100;
+const description = 'What number is missing in the progression?';
+const min = 0;
+const max = 100;
+
+const generateRound = () => {
   const progression = [];
-  const firstItem = getNumber(max);
+  const firstItem = getRandomNumber(min, max);
   for (let i = firstItem; i < firstItem + 10; i += 1) {
     progression.push(i);
   }
-  const cutIndex = Math.floor(Math.random() * 10);
+  const cutIndex = getRandomIndex(progression);
   const missingIndex = progression[cutIndex];
   progression[cutIndex] = '..';
-  const question = `Question: ${progression.join(' ')}`;
+  const question = `${progression.join(' ')}`;
   const correctAnswer = missingIndex.toString();
   return [question, correctAnswer];
 };
 const startProgression = () => {
-  const description = 'What number is missing in the progression?';
-  start(description, resultOfIt);
+  start(description, generateRound);
 };
 export default startProgression;

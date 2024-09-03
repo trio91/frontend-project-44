@@ -1,8 +1,12 @@
 import start from '../index.js';
-import getNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
+
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const min = 0;
+const max = 100;
 
 const isPrime = (number) => {
-  if (number === 0) {
+  if (number < 2) {
     return false;
   }
   for (let i = 2; i < number; i += 1) {
@@ -13,16 +17,14 @@ const isPrime = (number) => {
   return number !== 1;
 };
 
-const resultOfIt = () => {
-  const max = 100;
-  const number = getNumber(max);
-  const question = `Question: ${number}`;
+const generateRound = () => {
+  const number = getRandomNumber(min, max);
+  const question = `${number}`;
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
 const startPrime = () => {
-  const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  start(description, resultOfIt);
+  start(description, generateRound);
 };
 export default startPrime;

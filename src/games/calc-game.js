@@ -1,35 +1,31 @@
 import start from '../index.js';
-import getNumber from '../utils.js';
+import { getRandomNumber, getRandomIndex} from '../utils.js';
 
-const expressions = ['+', '-', '*'];
-function getExpression() {
-  const operation = expressions[Math.floor(Math.random() * expressions.length)];
-  return operation;
-}
+const min = 0;
+const max = 100;
+const description = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
 
-const calculation = (operation, firstNumber, secondNumber) => {
+const calculation = (operation, value1, value2) => {
   switch (operation) {
-    case '+': return firstNumber + secondNumber;
-    case '-': return firstNumber - secondNumber;
-    case '*': return firstNumber * secondNumber;
-    default: console.log('sorry');
+    case '+': return value1 + value2;
+    case '-': return value1 - value2;
+    case '*': return value1 * value2;
+    default: throw new Error(`Sorry operation ${operation} is undefined`); 
   }
-  return null;
 };
 
-const resultOfIt = () => {
-  const max = 100;
-  const number1 = getNumber(max);
-  const number2 = getNumber(max);
-  const expression = getExpression();
-  const question = `Question: ${number1} ${expression} ${number2}`;
+const generateRound = () => {
+  const number1 = getRandomNumber(min, max);
+  const number2 = getRandomNumber(min, max);
+  const operator = getRandomIndex(operators);
+  const question = `${number1} ${operator} ${number2}`;
   const correctAnswer = calculation(expression, number1, number2).toString();
   return [question, correctAnswer];
 };
 
 const startCalc = () => {
-  const description = 'What is the result of the expression?';
-  start(description, resultOfIt);
+  start(description, generateRound);
 };
 
 export default startCalc;

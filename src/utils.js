@@ -1,5 +1,9 @@
-const getNumber = (max, min = 0) => {
+const getRandomNumber = (min = 0, max) => {
   const number = Math.floor(Math.random() * (max - min + 1)) + min;
   return number;
 };
-export default getNumber;
+const getRandomIndex = (collection) => {
+  const index = Math.floor(Math.random() * collection.length);
+  return index;
+}
+export { getRandomNumber, getRandomIndex };
