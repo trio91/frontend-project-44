@@ -5,7 +5,6 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const min = 0;
 const max = 100;
 
-
 const even = (number) => {
   const result = (number % 2 === 0);
   return result;

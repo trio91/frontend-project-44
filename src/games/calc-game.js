@@ -1,5 +1,5 @@
 import start from '../index.js';
-import { getRandomNumber, getRandomIndex} from '../utils.js';
+import { getRandomNumber, getRandomIndex } from '../utils.js';
 
 const min = 0;
 const max = 100;
@@ -11,7 +11,7 @@ const calculation = (operator, value1, value2) => {
     case '+': return value1 + value2;
     case '-': return value1 - value2;
     case '*': return value1 * value2;
-    default: throw new Error(`Sorry operation ${operator} is undefined`); 
+    default: throw new Error(`Sorry operation ${operator} is undefined`);
   }
 };
 
