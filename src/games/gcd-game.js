@@ -23,11 +23,13 @@ const answer = (number1, number2) => {
 const generateRound = () => {
   const number1 = getRandomNumber(min, max);
   const number2 = getRandomNumber(min, max);
-  const question = `${number1} ${number2}`;
+  const question = number1.toString() + " " + number2.toString();
   const correctAnswer = answer(number1, number2).toString();
   return [question, correctAnswer];
 };
+
 const startGcd = () => {
   start(description, generateRound);
 };
+
 export default startGcd;

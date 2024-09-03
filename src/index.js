@@ -3,13 +3,9 @@ import readlineSync from 'readline-sync';
 const maxTries = 3;
 
 const start = (description, generateRound) => {
-  const getName = () => {
-    console.log('Welcome to the Brain Games!');
-    const name = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${name}!`);
-    return name;
-  };
-  const name = getName();
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
   console.log(description);
   for (let i = 0; i < maxTries; i += 1) {
     const [question, correctAnswer] = generateRound();

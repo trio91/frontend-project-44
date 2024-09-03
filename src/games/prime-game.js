@@ -6,20 +6,21 @@ const min = 0;
 const max = 100;
 
 const isPrime = (number) => {
+  const testLimit = Math.sqrt(number);
   if (number < 2) {
     return false;
   }
-  for (let i = 2; i < number; i += 1) {
+  for (let i = 2; i < testLimit; i += 1) {
     if (number % i === 0) {
       return false;
     }
   }
-  return number !== 1;
+  return true;
 };
 
 const generateRound = () => {
   const number = getRandomNumber(min, max);
-  const question = `${number}`;
+  const question = number.toString();
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
@@ -27,4 +28,5 @@ const generateRound = () => {
 const startPrime = () => {
   start(description, generateRound);
 };
+
 export default startPrime;
